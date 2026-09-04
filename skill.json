@@ -1,0 +1,36 @@
+{
+  "name": "genpark-robotics-quadruped-gait-telemetry-analyzer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time quadruped robot gait telemetry analyzer computing duty factors, center-of-mass oscillations, and surface slippage.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "edge-robotics",
+  "tags": [
+    "quadruped-robot",
+    "gait-analyzer",
+    "robotics-telemetry",
+    "unitree",
+    "embodied-ai"
+  ],
+  "inputs": {
+    "robot_id": {
+      "type": "string"
+    },
+    "gait_mode": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "telemetry_session_id": {
+      "type": "string"
+    },
+    "gait_stability_index": {
+      "type": "number"
+    },
+    "surface_slippage_detected": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
